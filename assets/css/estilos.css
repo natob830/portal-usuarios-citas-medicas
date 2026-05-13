@@ -1,0 +1,90 @@
+/* Estilos personalizados para el Portal de Usuarios */
+/* Complementan a Bootstrap para un diseño académico y profesional */
+
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    font-family: 'Arial', sans-serif; /* Tipografía limpia */
+    color: #495057; /* Texto gris oscuro */
+}
+
+.container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 50px;
+}
+
+h2 {
+    color: #343a40; /* Título en gris más oscuro */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.alert {
+    border-radius: 8px; /* Bordes redondeados para alertas */
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul Bootstrap */
+    border-color: #007bff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro al hover */
+    border-color: #004085;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Ajustes adicionales para navegación */
+.nav-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
