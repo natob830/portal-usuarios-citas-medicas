@@ -26,6 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // FORO: Validaciones en servidor
     if ($nombre === '') {
         $errores[] = 'El nombre es obligatorio.';
+    } elseif (!preg_match('/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/u', $nombre)) {
+        $errores[] = 'El nombre solo puede contener letras y espacios.';
     }
 
     if ($correo === '') {
@@ -109,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <form method="post">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" class="form-control" value="<?= htmlspecialchars($usuario['nombre']) ?>" required>
+                        <input type="text" name="nombre" id="nombre" class="form-control" value="<?= htmlspecialchars($usuario['nombre']) ?>" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios" required>
                     </div>
 
                     <div class="mb-3">

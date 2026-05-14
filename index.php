@@ -21,14 +21,60 @@ $usuario_autenticado = usuario_autenticado();
     <link href="assets/css/estilos.css" rel="stylesheet">
     <style>
         .navbar-custom {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
+            background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
+            border-bottom: 2px solid #1976d2;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .navbar-brand-custom {
             font-weight: bold;
-            color: #0d6efd !important;
-            font-size: 1.3rem;
+            color: #1976d2 !important;
+            font-size: 1.4rem;
+            text-shadow: none;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand-custom:hover {
+            transform: scale(1.05);
+            color: #0d47a1 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #1976d2 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0d47a1 !important;
+            transform: translateY(-2px);
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #1976d2;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .navbar-toggler {
+            border: 1px solid #1976d2;
+            background: rgba(25,118,210,0.1);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231976d2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
         .hero-section {
